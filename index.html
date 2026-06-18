@@ -11,49 +11,45 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/style.css" />
     <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body>
-    <main class="main" aria-label="Main">
-      <article>
-        <section class="card" aria-label="Profile Card">
-          <div class="card__img">
-            <img
-              src="./assets/images/illustration-article.svg"
-              alt="Card Image"
-              class="img-cover"
-            />
+    <main class="main">
+      <article class="card">
+        <div class="card__img">
+          <img
+            src="./assets/images/illustration-article.svg"
+            alt="Abstract vector illustration for the HTML and CSS foundation article"
+            class="img-cover"
+          />
+        </div>
+        <a href="#" class="card__link">Learning</a>
+        <div class="card__date">
+          Published <time class="date" datetime="2023-12-21">21 Dec 2023</time>
+        </div>
+        <h1 class="card__title">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            HTML & CSS foundations
+          </a>
+        </h1>
+        <div class="card__subtitle">
+          <p class="subtitle">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <footer class="card__profile">
+          <div class="profile__avatar">
+            <a href="#"
+              ><img
+                src="./assets/images/image-avatar.webp"
+                alt="Greg Hooper"
+                class="img-cover"
+            /></a>
           </div>
-          <button type="button" class="card__btn">Learning</button>
-          <div class="card__date">
-            <p class="date">Published 21 Dec 2023</p>
-          </div>
-          <div class="card__title">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <h1 class="title">HTML & CSS foundations</h1>
-            </a>
-          </div>
-          <div class="card__subtitle">
-            <p class="subtitle">
-              These languages are the backbone of every website, defining
-              structure, content, and presentation.
-            </p>
-          </div>
-          <div class="card__profile">
-            <div class="profile__icon" aria-label="Profile Image">
-              <a href="#"
-                ><img
-                  src="./assets/images/image-avatar.webp"
-                  alt="Profile image"
-                  class="img-cover"
-              /></a>
-            </div>
-            <div class="profile__title" aria-label="Profile Name">
-              <p class="profile"><a href="#">Greg Hooper</a></p>
-            </div>
-          </div>
-        </section>
+          <span class="profile__title"><a href="#">Greg Hooper</a></span>
+        </footer>
       </article>
     </main>
   </body>
